@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Tetris Clássico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <canvas id="board" width="300" height="600"></canvas>
+
+        <section class="side">
+
+            <div class="box">
+                <h2>Pontuação</h2>
+                <div class="value" id="score">0</div>
+            </div>
+
+            <div class="box">
+                <h2>Linhas</h2>
+                <div class="value" id="lines">0</div>
+            </div>
+
+            <div class="box">
+                <h2>Nível</h2>
+                <div class="value" id="level">1</div>
+            </div>
+
+            <div class="box">
+                <h2>Próxima</h2>
+                <canvas id="next" width="120" height="120"></canvas>
+            </div>
+
+            <button id="start">INICIAR</button>
+
+            <div class="box controls">
+                <strong>Controles</strong>
+
+                <p>← → Mover</p>
+                <p>↓ Descer</p>
+                <p>↑ Girar</p>
+                <p>Espaço: Queda</p>
+                <p>P: Pausar</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="game-over" id="gameOver">
+
+        <div class="game-over-box">
+
+            <h1>GAME OVER</h1>
+
+            <p>
+                Pontuação:
+                <strong id="finalScore">0</strong>
+            </p>
+
+            <button id="restart">
+                JOGAR NOVAMENTE
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
